@@ -1,0 +1,5 @@
+The aim of this project is to create a program that generates planets for the Traveller tabletop RPG,
+
+My personal goal is to gain the experience of creating a projectthat I can truly call my own; for personal edification
+
+Use responsibly :)
