@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hex grid test</title>
+
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+
+      .row {
+        height: 104px;
+        margin-bottom: -50px;
+      }
+
+      .row > .hex {
+        margin-left: 124px;
+        width: 60px;
+        height: 104px;
+        background-color: black;
+        display: inline-block;
+      }
+
+      .row:nth-child(2n) {
+        position: relative;
+        left: 92px;
+      }
+
+      .row > .hex:before {
+        content: '';
+        border-right: 30px solid black;
+        border-top: 52px solid transparent;
+        border-bottom: 52px solid transparent;
+        display: inline-block;
+        height: 0;
+        position: relative;
+        left: -30px;
+      }
+
+      .row > .hex:after {
+        content: '';
+        border-left: 30px solid black;
+        border-top: 52px solid transparent;
+        border-bottom: 52px solid transparent;
+        display: inline-block;
+        height: 0;
+        position: relative;
+        right: -30px;
+      }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='./hexScript.js'></script>
+  </head>
+  <body>
+  </body>
+</html>
